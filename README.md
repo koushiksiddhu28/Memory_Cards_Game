@@ -1,16 +1,77 @@
-# React + Vite
+# Memory Card Game
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple and fun Memory Card Game built with React and Vite.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Flip cards to find matching pairs of emojis.
+- Tracks your score and the number of moves.
+- Responsive design for desktop and mobile.
+- "New Game" button to reset and shuffle cards.
+- Win message when all pairs are matched.
 
-## React Compiler
+## Getting Started
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Prerequisites
 
-## Expanding the ESLint configuration
+- [Node.js](https://nodejs.org/) (v16 or higher recommended)
+- [npm](https://www.npmjs.com/) (comes with Node.js)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Installation
+
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/your-username/memory-game.git
+   cd memory-game
+   ```
+
+2. Install dependencies:
+   ```sh
+   npm install
+   ```
+
+### Running the Game
+
+To start the development server:
+```sh
+npm run dev
+```
+Open [http://localhost:5173](http://localhost:5173) in your browser.
+
+### Building for Production
+
+To build the app for production:
+```sh
+npm run build
+```
+
+To preview the production build:
+```sh
+npm run preview
+```
+
+## Project Structure
+
+```
+memory-game/
+  ├── public/
+  ├── src/
+  │   ├── App.jsx
+  │   ├── main.jsx
+  │   ├── index.css
+  │   └── components/
+  │       ├── Card.jsx
+  │       ├── Gameheader.jsx
+  │       └── WinMessage.jsx
+  ├── index.html
+  ├── package.json
+  └── ...
+```
+
+## License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+---
+
+Enjoy playing and feel free to contribute!
